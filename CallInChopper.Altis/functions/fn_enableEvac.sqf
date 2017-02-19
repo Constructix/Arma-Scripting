@@ -1,0 +1,1 @@
+player AddAction ["Call for Evac", "ExecVM 'ChopperEvac.sqf'"];
