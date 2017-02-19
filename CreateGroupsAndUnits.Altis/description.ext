@@ -1,0 +1,8 @@
+class enemy
+{
+	#include "config\enemy.hpp"
+};
+class west
+{
+	#include "config\westUnits.hpp"
+};

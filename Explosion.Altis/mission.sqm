@@ -1,0 +1,306 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"A3_Soft_F_MRAP_02",
+		"a3_map_stratis",
+		"A3_Air_F_Heli_Light_02",
+		"A3_Characters_F_OPFOR",
+		"A3_Soft_F_TruckHeavy",
+		"A3_Boat_F_Boat_Armed_01"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"A3_Air_F_Heli_Light_02",
+		"A3_Characters_F_OPFOR",
+		"A3_Soft_F_TruckHeavy",
+		"A3_Boat_F_Boat_Armed_01",
+		"A3_Soft_F_MRAP_02",
+		"a3_map_stratis"
+	};
+	randomSeed=7401988;
+	class Intel
+	{
+		briefingName="Explosives-To-Vehicle";
+		overviewText="{A script that allows players to place their explosives on vehicles} By Stealthstick/Zooloo75";
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2035;
+		month=7;
+		day=6;
+		hour=4;
+		minute=50;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1711.9346,5.5,5734.3457};
+					azimut=67.621521;
+					offsetY=-10;
+					id=0;
+					side="WEST";
+					vehicle="B_diver_exp_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={1718.084,5.5,5735.689};
+					azimut=100;
+					id=1;
+					side="EAST";
+					vehicle="O_Heli_Light_02_F";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={1719.8452,5.5,5749.7344};
+					azimut=100;
+					special="CARGO";
+					id=2;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={1718.7192,5.5,5744.1533};
+					azimut=100;
+					special="CARGO";
+					id=3;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={1728.213,5.5,5741.8472};
+					azimut=100;
+					special="CARGO";
+					id=4;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={1726.043,5.5,5745.7813};
+					azimut=100;
+					special="CARGO";
+					id=5;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1901.1146,5.5,5865.2744};
+					type="GETOUT";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1719.8325,5.5,5724.7314};
+					azimut=55;
+					special="NONE";
+					id=6;
+					side="EAST";
+					vehicle="O_Truck_02_covered_F";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1443.579,0.48371243,5791.0498};
+					azimut=-63.669384;
+					id=7;
+					side="EAST";
+					vehicle="O_Boat_Armed_01_hmg_F";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1533.3635,-11.38705,5538.4053};
+					azimut=35;
+					offsetY=-10;
+					id=8;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="server";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1718.4833,5.5,5705.1631};
+			azimut=135;
+			id=9;
+			side="EMPTY";
+			vehicle="O_MRAP_02_hmg_F";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=12841003;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=7394067;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=6990009;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};

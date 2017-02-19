@@ -1,0 +1,2 @@
+_mags=magazines player;
+

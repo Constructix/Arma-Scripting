@@ -1,0 +1,1 @@
+execVM "ifStatement.sqf";

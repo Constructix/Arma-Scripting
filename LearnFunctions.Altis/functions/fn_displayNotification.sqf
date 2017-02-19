@@ -1,0 +1,1 @@
+hint 'Using functions is working';

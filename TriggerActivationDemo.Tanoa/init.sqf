@@ -1,0 +1,1 @@
+ExecVM "LoadPlayer.sqf"

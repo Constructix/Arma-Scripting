@@ -1,0 +1,12 @@
+// class definition to go in this file ie description.ext
+class myMissionConfig
+{
+	class mySetup
+	{
+		welcomeMessage = "Welcome to Config";
+	}
+}
+// this code below to go in a init.sqf or another file with a suffix .sqf
+// to get the value
+// _welcomeMessage  = missionConfigFile >> "myMissionConfig" >> "mySetup" >> "welcomeMessage";
+// hint format["%1", _welcomeMessage];

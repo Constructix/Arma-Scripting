@@ -1,0 +1,1 @@
+//[] call rjj_fnc_playerSpawn;

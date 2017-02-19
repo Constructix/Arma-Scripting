@@ -1,0 +1,9 @@
+class CfgFunctions
+{
+    #include "functions\functions.hpp"
+};
+
+class enemy
+{
+	#include "config\enemy.hpp"
+};

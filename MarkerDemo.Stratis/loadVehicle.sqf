@@ -1,0 +1,12 @@
+_jeep = "B_Heli_Light_01_F" createVehicle position player;
+hint "LoadVehicle";
+_currentPlayer = player;
+_playerPosition  = getPos player;
+_xPos = _playerPosition select 0;
+_yPos = _playerPosition select 1;
+hint format["xPos %1\nyPos %2", _xPos, _yPos];
+_xPos = _xPos - 100;
+_pos = [_xPos, _yPos, 0];
+//_tower = "Land_TTowerBig_2_F" createVehicle position player;
+_tower = "Land_TTowerBig_2_F" createVehicle _pos;
+_tower2 = "Land_TTowerBig_2_F" createVehicle [5025,5600];
