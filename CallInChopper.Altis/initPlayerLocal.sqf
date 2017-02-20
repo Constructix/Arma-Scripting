@@ -1,5 +1,5 @@
-private ["_playerPosition", "_unit", "_heliPadMarker","_emptyHeliPadMarker", "_heliStartPos", "_heloGroup", "_result", "_wp", "_wp2", "_trg"];
-
+private [ "_unit", "_heliPadMarker","_emptyHeliPadMarker", "_heliStartPos", "_heloGroup", "_result", "_wp", "_wp2", "_trg"];
+private _playerPosition;
 // so what would happen here.
 player AddAction ["Call for Evac", "call Rjj_fnc_callForEvac"];
 // we would dynamically create a hidden helipad marker.
