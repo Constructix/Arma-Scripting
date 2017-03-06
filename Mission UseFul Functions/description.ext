@@ -1,0 +1,5 @@
+class CfgFunctions
+{
+    #include "functions\EastFunctions.hpp"
+	#include "functions\CommonFunctions.hpp"
+};
