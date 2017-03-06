@@ -1,5 +1,9 @@
 /* ****************************************************************************************************
-*
+*   Name        : CreateUnitPatrol.sqf
+*   Purpose     : Creates Unit patrol based on the marker, units and behaviour that is passed into the 
+*                 the function.*
+*   Created     : 2017-03-06
+*   Author      : Richard Jones
 *
 *   Parameters 	: _markerName -  (string)	Name of marker that is used as a reference point in the current AO
 *								that units will be created from. 
