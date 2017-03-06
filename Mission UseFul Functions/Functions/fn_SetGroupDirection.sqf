@@ -1,8 +1,9 @@
 /* ****************************************************************************************************
-*	Name			:	fn_SetGroupDirection.sqf
-*	Purpose		: 	Sets the direction and behaviour of the unit that is passed into this function.
-*   Parameters 	: 	_unitGroup 	-  (group)	Unit to set the direction to
-*				  	_behaviour   - 	(string) sets the behaviour of the group.
+*   Name			  :	fn_SetGroupDirection.sqf*    
+*	  Purpose		  : Sets the direction and behaviour of the unit that is passed into this function.
+*   Created     : 2016-0-06
+*   Parameters 	: _unitGroup 	-  (group)	Unit to set the direction to
+*				  	      _behaviour   - 	(string) sets the behaviour of the group.
 *   Returns			Nothing; 
 *******************************************************************************************************/
 
