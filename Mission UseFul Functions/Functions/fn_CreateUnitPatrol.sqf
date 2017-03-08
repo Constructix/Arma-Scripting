@@ -11,7 +11,7 @@
 *   	Returns			_taskPatrolHandle; 
 */
 params ["_markerName", "_units", "_behaviour"];
-private ["_markerPosition", "_unitStartPosition", "_unitGroup", "_groupLeader", _taskPatrolHandle];
+private ["_markerPosition", "_unitStartPosition", "_unitGroup", "_groupLeader", "_taskPatrolHandle"];
 
 // Create Position to spawn group from.
 _markerPosition = getMarkerPos _markerName;
