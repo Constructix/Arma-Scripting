@@ -20,7 +20,7 @@ _unitStartPosition = [[[_markerPosition, random 100], ["water", "out"]]] call BI
 // create the group
 _unitGroup = [_unitStartPosition, East, _units] call BIS_fnc_spawnGroup;
 
-[_unitGroup, _behaviour"] call Common_fnc_SetGroupDirection;
+[_unitGroup, _behaviour] call Common_fnc_SetGroupDirection;
 
 // Create the taskPatrol
 _taskPatrolHandle = [_unitGroup, _unitStartPosition, random(10)] call bis_fnc_taskPatrol;
