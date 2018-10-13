@@ -1,0 +1,6 @@
+// spawn group
+
+private ["_markerPos"];
+
+_markerPos = getMarkerPos "marker_0";
+[_markerPos, "sniperSpawn", side player, (configFile >> "CfgGroups" >> "West" >>"BUS_SniperTeam")] call BIS_fnc_spawnGroup;

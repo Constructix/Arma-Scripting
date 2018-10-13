@@ -1,0 +1,1 @@
+[player, -1, 0.8, false] call BIS_fnc_sandstorm;

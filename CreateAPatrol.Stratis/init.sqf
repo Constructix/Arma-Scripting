@@ -1,0 +1,1 @@
+ExecVM "CreateAPatrol.sqf";

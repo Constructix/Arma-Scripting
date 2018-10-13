@@ -1,0 +1,8 @@
+// Makes a group patrol around a position specified.
+// alpha_1_1
+// marker_0
+
+private "_markerPosition";
+
+_markerPosition  = Position marker_0;
+hint format ["%1", _markerPosition];

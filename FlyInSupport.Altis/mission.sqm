@@ -1,0 +1,220 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=10;
+	};
+	class Camera
+	{
+		pos[]={14692.397,42.91,16622.371};
+		dir[]={-0.45397541,-0.55161881,0.69973135};
+		up[]={-0.30023071,0.83409649,0.46275809};
+		aside[]={0.83890963,-6.868504e-009,0.54427218};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Air_F_Heli_Light_01"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=10093484;
+class ScenarioData
+{
+	author="Richard";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=4;
+		class Item0
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14687.317,17.911438,16639.139};
+						angles[]={0,5.5695815,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="C_man_polo_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12885.352,85.115974,16713.525};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=3;
+					type="C_man_polo_4_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14685.392,18.514706,16639.844};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5;
+			type="C_Heli_Light_01_civil_F";
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14690.733,17.911438,16661.887};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=9;
+					type="C_man_p_shorts_1_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8;
+		};
+	};
+};

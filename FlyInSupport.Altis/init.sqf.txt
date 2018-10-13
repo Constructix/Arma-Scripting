@@ -1,0 +1,7 @@
+// Create chopper
+
+private ["_position", "_chopper"];
+
+_position = [14676.7,16681,0];
+_chopper = "O_Heli_Transport_04_covered_F" createVehicle _position;
+

@@ -1,0 +1,368 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=129;
+	class ItemIDProvider
+	{
+		nextID=11;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
+	};
+	class Camera
+	{
+		pos[]={2096.3794,16.276855,5088.4229};
+		dir[]={-0.86850792,-0.4844451,0.105249};
+		up[]={-0.48093402,0.8748185,0.058281071};
+		aside[]={0.12030781,3.2771641e-007,0.99277169};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Air_F_Heli_Heli_Transport_03",
+	"A3_Structures_F_Ind_AirPort",
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=5;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Air_F_Heli";
+			name="Arma 3 Helicopters - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Structures_F_Ind";
+			name="Arma 3 - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=11678219;
+class ScenarioData
+{
+	author="Richard";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=6;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2094.5239,5.0014391,5086.561};
+						angles[]={0,4.7018991,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="chopperD";
+						isPlayer=1;
+					};
+					id=2;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2094.5242,5.0014391,5086.561};
+						angles[]={0,4.7018919,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=3;
+					type="B_Helipilot_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2094.5242,5.0014391,5086.561};
+						angles[]={0,4.7018919,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="chopperG";
+					};
+					id=4;
+					type="B_helicrew_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2094.5242,5.0014391,5086.561};
+						angles[]={0,4.7018919,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=5;
+					type="B_helicrew_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=4;
+				};
+				class Links
+				{
+					items=4;
+					class Item0
+					{
+						linkID=0;
+						item0=2;
+						item1=1;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=3;
+						item1=1;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=4;
+						item1=1;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={1};
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=5;
+						item1=1;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={2};
+						};
+					};
+				};
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2094.5242,8.3443718,5086.4561};
+				angles[]={0,4.7018919,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				name="chopper";
+			};
+			id=1;
+			type="B_Heli_Transport_03_F";
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2041.7469,10.463457,5087.395};
+				angles[]={0,4.7086368,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="hanger";
+			};
+			id=6;
+			type="Land_Hangar_F";
+			atlOffset=4.7683716e-007;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2093.6499,5,5086.1152};
+				angles[]={0,4.7428451,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="helipadLocation";
+			};
+			id=7;
+			type="Land_HelipadSquare_F";
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2082.4438,5.0014391,5070.3096};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=9;
+					type="B_support_AMG_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={2041.427,5,5087.333};
+			name="marker_0";
+			type="Empty";
+			id=10;
+		};
+	};
+};
