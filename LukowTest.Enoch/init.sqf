@@ -12,15 +12,12 @@
 * Date      : 20191110
 * Author    : YogiBear
 **************************************************************************************************************/
-private ["_admin"]
+private ["_admin"];
+
 private ["_marker"];
 private ["_playerName"];
-/*
-* Replace here with Admin name
-*/
 _admin = "Richard"; // Change to your name for the triggers to be actioned.
-
-_marker = "lukowMarker";
+_marker = "Brena";
 
 _playerName = call BIS_fnc_playerName;
 
@@ -29,3 +26,6 @@ if(_playerName == _admin) then {
 	player setVariable["markerName", _marker, true];
 	call RJC_fnc_createTrigger;
 };
+
+
+

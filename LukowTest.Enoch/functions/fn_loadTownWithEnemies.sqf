@@ -9,18 +9,19 @@
 * Author    : YogiBear
 **************************************************************************************************************/
 
+
+
 private ["_markerName"];
-_markerName  =  player getVariable "markerName";
-private _buildings  = [_markerName] call RJC_fnc_getBuildings;
-diag_log format["[RJC] - [PrintBuildings] - Start"];
-diag_log format["------------------------------------------------------------------------------------ "];
-diag_log format["[RJC] - [PrintBuildings] - Looping through Buildings array:"];
-{
-	_buildingData = _x;
-	diag_log format["[RJC] - [PrintBuildings] - Name: %1 Number of Positions Available: %2", _buildingData select 0, _buildingData select 1 ];
+private ["_handle"];
+private ["_message"];
+_message = "Spawning Enemies into Town";
+_handle = [] spawn {
+	_markerName =  player getVariable "markerName";
+	diag_log format["[RJC] - [LoadTownWithENemies] - MarkerName: %1", _markerName];
+	private _buildings  = [_markerName] call RJC_fnc_getBuildings;
+	[_buildings, _markerName] call RJC_fnc_assignEnemiesToBuildings;
 	
-} forEach _buildings;
-diag_log format["[RJC] - [PrintBuildings] - Completed ListBuild"];
+};
+[_message] call RJC_fnc_notifyAdmin;
 
 
-[_buildings, _markerName] call RJC_fnc_listBuild;

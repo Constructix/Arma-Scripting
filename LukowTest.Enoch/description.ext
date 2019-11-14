@@ -2,3 +2,4 @@ class cfgFunctions
 {
     #include "functions\functions.hpp"
 };
+

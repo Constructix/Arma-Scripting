@@ -4,10 +4,12 @@ class RJC
     class functions
     {
         file="functions";
-        class getBuildings {};
-        class listBuild {};
+        class getBuildings {};        
         class loadTownWithEnemies {};
         class createTrigger {};
         class deSpawnEnemies {};
+        class spawnEnemies {};
+        class assignEnemiesToBuildings {}; 
+        class notifyAdmin {};      
     };
 };

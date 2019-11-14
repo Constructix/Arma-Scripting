@@ -16,6 +16,7 @@ private ["_allNearbyObjects"];
 private ["_buildingPositions"];
 private ["_buildingData"];
 private ["_buildings"];
+private ["_searchArea"];
 
 _buildingObjects = [];
 _buildingPositions  = [];
@@ -29,26 +30,22 @@ _buildingData = [];
 // Returns the building.
 
 _markerPosition = markerPos _markerName;
-diag_log format["[RJC] - [getBuildings] - Start"];
-diag_log format["[RJC] - [getBuilding] - Calling nearest Objects that are a building"];
-_allNearbyObjects = nearestObjects[_markerPosition, [], 50]; 
-diag_log format["[RJC] - [getBuilding] - All Nearest Objects"];
+_searchArea =   [50, 100] call BIS_fnc_randomInt;
+_allNearbyObjects = nearestObjects[_markerPosition, [],_searchArea]; 
 {
 
 	_buildingPositions  = [_x] call BIS_fnc_BuildingPositions;
 	if(count _buildingPositions >  0 ) then {
 		// Build up the data structure to store the building and the number of positions in the building.
 		_buildingData append[_x];
-		_buildingData append[ count _buildingPositions];
-		_buildings append[_buildingData];
+		_buildingData append[_buildingPositions];
+		_buildingData append[]; // simulates a position that has a unit, once we have go through the units and assign to the position, therefore the positions will be randomly selected.
+		_buildings append[_buildingData];				
 		_buildingData = [];
-		diag_log format ["[RJC] - [getBuilding] - Building Name: %1 Position: %2  Number of Building Positions: %3", _x, getPos _x, count _buildingPositions];
 	}
 	else {
-		diag_log format["[RJC] - [getBuilding] -                  NOT a building - %1", _x];
+		//diag_log format["[RJC] - [getBuilding] -                  NOT a building - %1", _x];
 	};
 	
 } forEach _allNearbyObjects;
-diag_log format["[RJC] - [getBuilding] - Finished Looping through the buildings collection."];
-diag_log format["[RJC] - [getBuildings] - End"];
 _buildings // return back the buildings in the area specified. at this stage 50 metres.

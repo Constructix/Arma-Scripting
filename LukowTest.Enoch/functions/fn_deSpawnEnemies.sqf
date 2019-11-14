@@ -6,6 +6,10 @@
 *******************************************************************************************************************/
 
 private ["_spawnGroup"];
+private ["_playerName"];
+private ["_message"];
+
+_message = "DeSpawning Enemies From Area.";
 _spawnGroup = player getVariable "spawnGroup";
 diag_log format["[RJC] - [deSpawnEnemies] - Deleting enemies, since you are outside the trigger area."];
 {
@@ -16,3 +20,6 @@ diag_log format["[RJC] - [deSpawnEnemies] - Deleting enemies, since you are outs
 deleteGroup _spawnGroup;
 player setVariable["spawnGroup", ""];
 diag_log format["[RJC] - [deSpawnEnemies] - Deleted all enemies that spawned in the trigger area."];
+
+[_message] call RJC_fnc_notifyAdmin;
+
